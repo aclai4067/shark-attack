@@ -1,28 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import studentData from '../helpers/data/studentData';
+import SharkTank from '../components/SharkTank/SharkTank';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button className='btn btn-light'>Hi Friend!</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    livingStudents: [],
+  }
+
+  componentDidMount() {
+    const livingStudents = studentData.livingStudents();
+    this.setState({ livingStudents });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>E10 Pool Day</h1>
+        <SharkTank liveStudents={this.state.livingStudents} />
+        <button className='btn btn-outline-light'>SHARK ATTACK!</button>
+      </div>
+    );
+  }
 }
 
 export default App;
