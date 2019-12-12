@@ -136,28 +136,28 @@ const students = [
     id: 'student20',
     firstName: 'Maria',
     lastName: 'Brock',
-    isDead: true,
+    isDead: false,
     imgUrl: 'https://avatars2.githubusercontent.com/u/54127296?s=460&v=4',
   },
   {
     id: 'student21',
     firstName: 'Monica',
     lastName: 'Djunaidi',
-    isDead: true,
+    isDead: false,
     imgUrl: 'https://avatars0.githubusercontent.com/u/53092019?s=460&v=4',
   },
   {
     id: 'student22',
     firstName: 'Randy',
     lastName: 'Tate',
-    isDead: true,
+    isDead: false,
     imgUrl: 'https://avatars2.githubusercontent.com/u/54008854?s=460&v=4',
   },
   {
     id: 'student23',
     firstName: 'Raymond',
     lastName: 'Arceneaux',
-    isDead: true,
+    isDead: false,
     imgUrl: 'https://avatars3.githubusercontent.com/u/40898992?s=460&v=4',
   },
 ];
@@ -166,4 +166,9 @@ const livingStudents = () => students.filter((student) => !student.isDead);
 
 const dearlyDeparted = () => students.filter((student) => student.isDead);
 
-export default { livingStudents, dearlyDeparted };
+const followTheLight = (livingStudentId) => {
+  const studentIndex = students.findIndex((student) => student.id === livingStudentId);
+  students[studentIndex].isDead = true;
+};
+
+export default { livingStudents, dearlyDeparted, followTheLight };
