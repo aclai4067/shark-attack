@@ -7,7 +7,7 @@ import LivingStudent from '../LivingStudent/LivingStudent';
 
 class SharkTank extends React.Component {
   static propTypes = {
-    livingStudents: PropTypes.arrayOf(studentShape.studentShape),
+    liveStudents: PropTypes.arrayOf(studentShape.studentShape),
   }
 
   render() {
