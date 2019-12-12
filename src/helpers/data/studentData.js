@@ -157,11 +157,13 @@ const students = [
     id: 'student23',
     firstName: 'Raymond',
     lastName: 'Arceneaux',
-    isDead: false,
+    isDead: true,
     imgUrl: 'https://avatars3.githubusercontent.com/u/40898992?s=460&v=4',
   },
 ];
 
 const livingStudents = () => students.filter((student) => !student.isDead);
 
-export default { livingStudents };
+const dearlyDeparted = () => students.filter((student) => student.isDead);
+
+export default { livingStudents, dearlyDeparted };
