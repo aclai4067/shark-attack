@@ -161,3 +161,7 @@ const students = [
     imgUrl: 'https://avatars3.githubusercontent.com/u/40898992?s=460&v=4',
   },
 ];
+
+const livingStudents = () => students.filter((student) => !student.isDead);
+
+export default { livingStudents };

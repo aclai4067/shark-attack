@@ -18,7 +18,6 @@ class App extends React.Component {
       <div className="App">
         <h1>E10 Pool Day</h1>
         <SharkTank liveStudents={this.state.livingStudents} />
-        <button className='btn btn-outline-light'>SHARK ATTACK!</button>
       </div>
     );
   }
