@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.livingCard {
+  background-color: transparent;
+  border-color: transparent;
+
+  .studentImg{
+    border-radius: 999px;
+  }
+
+  h5 {
+    color: $sharktoothwhite;
+  }
+}

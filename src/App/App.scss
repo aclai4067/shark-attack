@@ -1,3 +1,6 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '../styles/variables';
+
 .App {
   text-align: center;
 }
@@ -20,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $sharktoothwhite;
 }
 
 .App-link {

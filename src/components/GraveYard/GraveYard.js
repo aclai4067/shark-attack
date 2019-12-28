@@ -16,8 +16,7 @@ class GraveYard extends React.Component {
     const graveCards = deceasedStudents.map((student) => <GraveStone key={student.id} deceased={student} />);
 
     return (
-      <div id='graveyard'>
-        <h3>Grave Yard</h3>
+      <div id='graveyard' className="col-6">
         <div className='departedStudents row d-flex flex-wrap justify-content-around'>
           {graveCards}
         </div>
