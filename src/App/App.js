@@ -35,9 +35,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>E10 Pool Day</h1>
-        <div>
-          <SharkTank className='col-6' liveStudents={this.state.livingStudents} sharkAttack={this.sharkAttack} />
-          <GraveYard className='col-6' departedStudents={this.state.deadStudents} />
+        <div className="row d-flex">
+          <SharkTank liveStudents={this.state.livingStudents} sharkAttack={this.sharkAttack} />
+          <GraveYard departedStudents={this.state.deadStudents} />
         </div>
       </div>
     );
