@@ -11,7 +11,6 @@ This application begins with the entire NSS cohort E10 roster in a shark tank.  
 ![all dead](https://raw.githubusercontent.com/aclai4067/shark-attack/master/screenshots/shark-attack-no-students.png)
 
 ## How to run
-* Clone down this project from [GitHub](https://github.com/aclai4067/personal-bio-site)
+* Clone down this project from [GitHub](https://github.com/aclai4067/shark-attack)
 * Install [http-server](https://npmjs.com/package/http-server) from npm
-* At the root of this project, run the following command: `hs -p 8080`
-* In your browser, navigate to `https://localhost:8080`
+* In your browser, navigate to `https://localhost:3000`
